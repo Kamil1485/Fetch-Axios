@@ -10,7 +10,7 @@ const[axiosdata,setaxiosdata]=useState([])
     },[])
 
 const getData = async () => {
-	const response = await axios.get(`https://restcountries.com/v3.1/all`);
+    const response = await axios.get(`https://restcountries.com/v3.1/all`);
     const data=response.data;
     setaxiosdata(data)
 
@@ -21,7 +21,7 @@ console.log(axiosdata)
         <div>
             <h2>Axios Await-Async Veri Çekme</h2>
             {
-                axiosdata.map((country)=>(
+             axiosdata.map((country)=>(
             <div key={country.name.official}>
             <h3 style={{color:"green"}}>{country.name.official}</h3>
             <p>Capital of Country: {country.capital}</p>
