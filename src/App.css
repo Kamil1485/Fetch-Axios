@@ -1,0 +1,25 @@
+.App{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-left:10px;
+}
+.formregister{
+  margin-top:22px;
+  display:flex;
+  flex-direction:column;
+}
+
+.formregister input{
+font-size:24px;
+border:2px solid;
+}
+input{
+  margin-top:34px;
+}
+
+button{
+  margin-top:34px;
+  cursor:pointer;
+font-size:22px;
+}
